@@ -2,13 +2,13 @@
 import os
 import shutil
 import zipfile
-from tqdm import tqdm
+
 import yaml
-from pydrive.drive import GoogleDrive
+from colorama import Fore, init
 from pydrive.auth import GoogleAuth
+from pydrive.drive import GoogleDrive
+from tqdm import tqdm
 
-
-from colorama import init, Fore
 init()
 gauth = GoogleAuth()
 gauth.LocalWebserverAuth()
